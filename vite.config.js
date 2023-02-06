@@ -2,7 +2,7 @@
  * Author  rhys.zhao
  * Date  2022-09-05 11:46:04
  * LastEditors  rhys.zhao
- * LastEditTime  2022-12-27 10:13:19
+ * LastEditTime  2023-02-06 11:19:16
  * Description vite 配置
  */
 import { defineConfig } from "vite";
@@ -10,12 +10,12 @@ import react from "@vitejs/plugin-react";
 
 import { resolve } from "path";
 
-import imagemin from "vite-plugin-imagemin";
+// import imagemin from "vite-plugin-imagemin";
 
 export default ({ command, mode }) => {
   return defineConfig({
     assetsInclude: ["**/*.gltf"],
-    plugins: [react(), imagemin()],
+    plugins: [react()],
     resolve: {
       alias: {
         "@": resolve(__dirname, "./src")
