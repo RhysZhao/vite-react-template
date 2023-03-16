@@ -1,0 +1,1 @@
+import{d as e,j as t,a}from"./vendor-df519bda.js";const i="detail-28641",l={detail:i,"vite-img":"vite-img-fc363"},c="/static/img/example-ed9731c3.png",m=()=>{const s=e();return t("div",{className:l.detail,children:[a("div",{children:`\u8FD9\u91CC\u662F\u6587\u7AE0${s.id}`}),a("img",{src:c,alt:""})]})};export{m as default};
