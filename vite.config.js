@@ -2,7 +2,7 @@
  * Author  rhys.zhao
  * Date  2022-09-05 11:46:04
  * LastEditors  rhys.zhao
- * LastEditTime  2023-02-06 11:19:16
+ * LastEditTime  2023-03-16 17:36:58
  * Description vite 配置
  */
 import { defineConfig } from "vite";
@@ -14,6 +14,7 @@ import { resolve } from "path";
 
 export default ({ command, mode }) => {
   return defineConfig({
+    base: "./",
     assetsInclude: ["**/*.gltf"],
     plugins: [react()],
     resolve: {

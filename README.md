@@ -2,13 +2,15 @@
  * Author  rhys.zhao
  * Date  2022-08-25 10:38:32
  * LastEditors  rhys.zhao
- * LastEditTime  2022-12-27 14:02:31
+ * LastEditTime  2023-03-16 17:38:13
  * Description readme文件
 -->
 
 # 1.项目描述
 
 基于 vite 的 react 项目模板
+
+在线预览地址：[https://rhyszhao.github.io/vite-react-template/](https://rhyszhao.github.io/vite-react-template/)
 
 # 2.项目目录
 
