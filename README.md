@@ -2,7 +2,7 @@
  * Author  rhys.zhao
  * Date  2022-08-25 10:38:32
  * LastEditors  rhys.zhao
- * LastEditTime  2023-03-16 17:38:13
+ * LastEditTime  2023-03-20 11:48:22
  * Description readme文件
 -->
 
@@ -72,10 +72,27 @@ yarn install
 or
 
 ```
-cnpm install
+npm install
 ```
 
 # 4.启动
+
+注意：
+
+本地启动前删除`/src/main.jsx`文件中的 basename。
+
+之所以加 basename 是为了能够在 github pages 看到效果。
+
+```js
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    {/* todo: 这里加上basename是因为github部署路由的问题。个人部署需要删除 */}
+    <BrowserRouter basename='/vite-react-template'>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
+);
+```
 
 ```
 npm start
